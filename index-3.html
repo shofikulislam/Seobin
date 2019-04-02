@@ -16,9 +16,8 @@
    ==================================================== -->
    <!--Font Awesome -->
    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-   <!-- Animate CSS -->
-   <link rel="stylesheet" href="css/animate.css">
+   <!--Animate css -->
+   <link rel="stylesheet" href="css/animate.css" />
 
    <!-- Iconic Fonts -->
    <link rel="stylesheet" href="css/icofonts.css" />
@@ -156,18 +155,11 @@
    </div>
    <!-- Off canvas menu End -->
 
-   <div class="tw-top-bar">
+
+   <div class="tw-top-bar no-border">
       <div class="container">
          <div class="row">
-            <div class="col-md-8 text-left">
-               <div class="top-contact-info">
-                  <span><i class="icon icon-phone3"></i>1010 Avenue, NY, USA</span>
-                  <span><i class="icon icon-envelope"></i>info@example.com</span>
-                  <span><i class="icon icon-map-marker2"></i>009-215-5596</span>
-               </div>
-            </div>
-            <!-- Col End -->
-            <div class="col-md-4 ml-auto text-right">
+            <div class="col-md-4">
                <div class="top-social-links">
                   <span>Follow us:</span>
                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -177,6 +169,14 @@
                </div>
             </div>
             <!-- Col End -->
+            <div class="col-md-8 text-right">
+               <div class="top-contact-info">
+                  <span><i class="icon icon-phone3"></i>1010 Avenue, NY, USA</span>
+                  <span><i class="icon icon-envelope"></i>009-215-5596</span>
+                  <span><i class="icon icon-map-marker2"></i>009-215-5596</span>
+               </div>
+            </div>
+            <!-- Col end -->
          </div>
          <!-- Row End -->
       </div>
@@ -186,12 +186,12 @@
 
 
    <!-- header======================-->
-   <header>
-      <div class="tw-head">
+   <header class="header-absolute">
+      <div class="tw-header">
          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light dark-nav">
                <a class="navbar-brand tw-nav-brand" href="index.html">
-                  <img src="images/logo/logo.png" alt="seobin">
+                  <img src="images/footer_logo.png" alt="seobin">
                </a>
                <!-- End of Navbar Brand -->
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -202,14 +202,14 @@
                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                      <li class="nav-item dropdown active">
-                        <a class="nav-link" href="#" data-toggle="dropdown">
+                        <a class="nav-link active" href="#" data-toggle="dropdown">
                            Home
                            <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
                         </a>
                         <ul class="dropdown-menu tw-dropdown-menu">
-                           <li class="active"><a href="index.html">Home One</a></li>
+                           <li><a href="index.html">Home One</a></li>
                            <li><a href="index-2.html">Home Two</a></li>
-                           <li><a href="index-3.html">Home Three</a></li>
+                           <li class="active"><a href="index-3.html">Home Three</a></li>
                            <li><a href="index-4.html">Home Four</a></li>
                            <li><a href="index-5.html">Home Five</a></li>
                            <li><a href="index-6.html">Home Six</a></li>
@@ -258,6 +258,7 @@
                         <!-- End of Dropdown menu -->
                      </li>
                      <!-- End Dropdown -->
+
                      <li class="nav-item dropdown tw-megamenu-wrapper">
                         <a class="nav-link" href="#" data-toggle="dropdown">
                            Features
@@ -347,18 +348,15 @@
                   <!-- End Navbar Nav -->
                </div>
                <!-- End of navbar collapse -->
-
-               <div class="tw-off-search d-none d-lg-inline-block">
-                  <div class="tw-search">
-                     <i class="fa fa-search"></i>
-                  </div>
-                  <div class="tw-menu-bar-default tw-menu-bar" id="open-button">
+               <div class="tw-offcanvas-menu offcanvas-dark-menu d-none d-md-inline-block">
+                  <i class="fa fa-search"></i>
+                  <div class="tw-menu-bar inline-menu">
                      <span></span>
                      <span></span>
                      <span></span>
                   </div>
                </div>
-               <!-- End off canvas menu -->
+               <!-- End of offcanvas -->
             </nav>
             <!-- End of Nav -->
          </div>
@@ -405,11 +403,6 @@
 
 
       <div class="slider-2">
-         <div class="slider-arrow">
-            <img src="images/slider/pattern_arrow2.png" alt="sliderArrow1">
-            <img src="images/slider/pattern_arrow1.png" alt="sliderArrow2">
-            <img src="images/slider/pattern_arrow3.png" alt="sliderArrow3">
-         </div>
          <div class="slider-wrapper d-table">
             <div class="slider-inner d-table-cell">
                <div class="container">
@@ -442,11 +435,6 @@
 
 
       <div class="slider-3">
-         <div class="slider-arrow">
-            <img src="images/slider/pattern_arrow2.png" alt="sliderArrow1">
-            <img src="images/slider/pattern_arrow1.png" alt="sliderArrow2">
-            <img src="images/slider/pattern_arrow3.png" alt="sliderArrow3">
-         </div>
          <div class="slider-wrapper d-table">
             <div class="slider-inner d-table-cell">
                <div class="container">
@@ -480,87 +468,35 @@
    </div>
    <!-- End Carousel -->
 
-
-   <section id="tw-features" class="tw-features-area">
+   <section id="tw-intro" class="tw-intro-area">
       <div class="container">
-         <div class="row tw-mb-65">
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="1s">
-               <h2 class="column-title text-md-right text-sm-center">Best Digital<br/> Marketing Services!</h2>
-            </div>
-            <!-- Col End -->
-            <div class="col-md-7 ml-md-auto wow fadeInRight" data-wow-duration="1s">
-               <p class="features-text">Start working with an company that can provide everything you need to generate awareness, drive traffic, connect
-                  with customers, and increase sales montes,
-                  <br/> nascetur ridiculus mus.</p>
-            </div>
-            <!-- Col End -->
-         </div>
-         <!-- End Row 1 -->
          <div class="row">
-            <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-               <div class="features-box">
-                  <div class="features-icon d-table">
-                     <div class="features-icon-inner d-table-cell">
-                        <img src="images/icon/feature1.png" alt="">
-                     </div>
-                     <!-- End Features icon inner -->
-                  </div>
-                  <!-- End Features Icon -->
-                  <h3>Socail Marketing</h3>
-                  <p>Start working with an company that provide everything you need to any create awareness drive
-                  </p>
-                  <a href="#" class="tw-readmore">Read More
-                     <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-               <!-- End Single Features -->
+
+            <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+               <img src="images/about/about_image.png" alt="" class="img-fluid">
             </div>
-            <!-- Col End -->
-            <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".4s">
-               <div class="features-box">
-                  <div class="features-icon d-table">
-                     <div class="features-icon-inner d-table-cell">
-                        <img src="images/icon/feature2.png" alt="">
-                     </div>
-                     <!-- End Features Icon inner -->
-                  </div>
-                  <!-- End Features Icon -->
-                  <h3>SEO Optimization</h3>
-                  <p>Start working with an company that provide everything you need to any create awareness drive
-                  </p>
-                  <a href="#" class="tw-readmore">Read More
-                     <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-               <!-- End Single Features -->
+            <!-- End Col -->
+            <div class="col-lg-5 ml-auto col-md-12 wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+               <h2 class="column-title">A better website means better user experience</h2>
+               <span class="animate-border tw-mb-40"></span>
+               <p>
+                  Start working with an company that can provide everything you need to generate awareness, drive traffic, connect with customers,
+                  and increase sales nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+               </p>
+               <p>
+                  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+               </p>
+               <!-- End Intro list -->
+               <a href="#" class="btn btn-primary">learn more</a>
+               <!-- Default Round Btn -->
+               <a href="#" class="btn btn-secondary">contact us</a>
             </div>
-            <!-- end col -->
-            <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
-               <div class="features-box">
-                  <div class="features-icon d-table">
-                     <div class="features-icon-inner d-table-cell">
-                        <img src="images/icon/feature3.png" alt="">
-                     </div>
-                     <!-- End Features Icon inner -->
-                  </div>
-                  <!-- End Features Icon -->
-                  <h3>SEO Management</h3>
-                  <p>Start working with an company that provide everything you need to any create awareness drive
-                  </p>
-                  <a href="#" class="tw-readmore">Read More
-                     <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-               <!-- End Single Features -->
-            </div>
-            <!-- End col -->
+            <!-- End Col -->
          </div>
-         <!-- End Row 2 -->
+         <!-- End Row -->
       </div>
       <!-- End Container -->
    </section>
-   <!-- End Features section -->
-
 
    <section id="tw-analysis" class="tw-analysis-area">
       <div class="analysis-bg-pattern d-none d-md-inline-block">
@@ -610,121 +546,11 @@
    <!-- End Analysis Section -->
 
 
-   <section id="tw-intro" class="tw-intro-area">
-      <div class="tw-ellipse-pattern">
-         <img src="images/about/about_ellipse.png" alt="">
-      </div>
-      <!-- End Ellipse Pattern -->
-      <div class="container">
-         <div class="row">
-
-            <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s">
-               <img src="images/about/about_image.png" alt="" class="img-fluid">
-            </div>
-            <!-- End Col -->
-            <div class="col-lg-5 ml-auto col-md-12 wow fadeInRight" data-wow-duration="1s">
-               <h2 class="column-title">A better website means better user experience</h2>
-               <span class="animate-border tw-mb-40"></span>
-               <p>
-                  Start working with an company that can provide everything you need to generate awareness, drive traffic, connect with customers,
-                  and increase sales nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
-               </p>
-               <p>
-                  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
-               </p>
-               <!-- End Intro list -->
-               <a href="#" class="btn btn-primary">learn more</a>
-               <!-- Default Round Btn -->
-               <a href="#" class="btn btn-secondary">contact us</a>
-            </div>
-            <!-- End Col -->
-         </div>
-         <!-- End Row -->
-      </div>
-      <!-- End Container -->
-   </section>
-   <!-- Intro section End -->
-
-
-   <section id="tw-facts" class="tw-facts">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-3 text-center">
-               <div class="tw-facts-box">
-                  <div class="facts-img wow zoomIn" data-wow-duration="1s">
-                     <img src="images/icon/fact1.png" alt="" class="img-fluid">
-                  </div>
-                  <!-- End Fatcs image -->
-                  <div class="facts-content wow fadeInUp" data-wow-duration="1s">
-                     <h4 class="facts-title">Active clients</h4>
-                     <span class="counter">200</span>
-                     <sup>+</sup>
-                  </div>
-                  <!-- Facts Content End -->
-               </div>
-               <!-- Facts Box End -->
-            </div>
-            <!-- Col End -->
-            <div class="col-md-3 text-center">
-               <div class="tw-facts-box">
-                  <div class="facts-img wow zoomIn">
-                     <img src="images/icon/fact2.png" alt="" class="img-fluid">
-                  </div>
-                  <!-- End Facts Image -->
-                  <div class="facts-content wow slideInUp">
-                     <h4 class="facts-title">Projects Done</h4>
-                     <span class="counter">570</span>
-                     <sup>+</sup>
-                  </div>
-                  <!-- End Facts Content -->
-               </div>
-               <!-- End Facts Box -->
-            </div>
-            <!-- Col End -->
-            <div class="col-md-3 text-center">
-               <div class="tw-facts-box">
-                  <div class="facts-img wow zoomIn">
-                     <img src="images/icon/fact3.png" alt="" class="img-fluid">
-                  </div>
-                  <!-- End Facts Image -->
-                  <div class="facts-content wow slideInUp">
-                     <h4 class="facts-title">Success Rate</h4>
-                     <span class="counter">98</span>
-                     <sup>%</sup>
-                  </div>
-                  <!-- End Facts Content -->
-               </div>
-               <!-- End Facts Box -->
-            </div>
-            <!-- Col End -->
-            <div class="col-md-3 text-center">
-               <div class="tw-facts-box">
-                  <div class="facts-img wow zoomIn">
-                     <img src="images/icon/fact4.png" alt="" class="img-fluid">
-                  </div>
-                  <!-- End Facts Image -->
-                  <div class="facts-content wow slideInUp">
-                     <h4 class="facts-title">Awards</h4>
-                     <span class="counter">50</span>
-                     <sup>+</sup>
-                  </div>
-                  <!-- End Facts Content -->
-               </div>
-               <!-- End Facts Box -->
-            </div>
-            <!-- Col End -->
-         </div>
-         <!-- Row End -->
-      </div>
-      <!-- Container End -->
-   </section>
-   <!-- Facts End -->
-
 
    <section id="tw-service" class="tw-service">
       <div class="container">
          <div class="row text-center">
-            <div class="col section-heading wow fadeInDown">
+            <div class="col section-heading">
                <h2>
                   <small>Our services</small>
                   Our Best
@@ -737,7 +563,7 @@
          <!-- Title Row End -->
          <div class="row">
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-1 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service1.png" alt="search engine" class="img-fluid">
@@ -757,7 +583,7 @@
             </div>
             <!-- Col End -->
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-2 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service2.png" alt="search engine" class="img-fluid">
@@ -777,7 +603,7 @@
             </div>
             <!-- Col End -->
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-3 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service3.png" alt="search engine" class="img-fluid">
@@ -798,10 +624,10 @@
             <!-- Col end -->
          </div>
          <!-- Row end -->
-         <div class="tw-mb-60"></div>
+         <div class="tw-mb-105"></div>
          <div class="row">
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-4 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service4.png" alt="search engine" class="img-fluid">
@@ -821,7 +647,7 @@
             </div>
             <!-- Col end -->
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-5 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service5.png" alt="search engine" class="img-fluid">
@@ -841,7 +667,7 @@
             </div>
             <!-- Row End -->
             <div class="col-md-4 text-center">
-               <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+               <div class="tw-service-box">
                   <div class="service-icon service-icon-bg-6 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service6.png" alt="search engine" class="img-fluid">
@@ -871,7 +697,7 @@
    <section id="tw-case" class="tw-case">
       <div class="container">
          <div class="row text-center">
-            <div class="col section-heading wow fadeInDown" data-wow-deuration="1s" data-wow-delay=".2s">
+            <div class="col section-heading">
                <h2>
                   <small>Success Stories</small>
                   Our
@@ -884,7 +710,7 @@
          </div>
          <!-- End Row -->
          <div class="row">
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="col-md-4 text-center">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-1">
                      <img src="images/cases/case-study1.png" alt="" class="img-fluid">
@@ -901,39 +727,39 @@
                <!-- End case study box -->
             </div>
             <!-- End Col -->
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+            <div class="col-md-4 text-center">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-2">
                      <img src="images/cases/case-study2.png" alt="" class="img-fluid">
                   </div>
                   <div class="casestudy-content">
                      <a href="#">
-                        <h4>Cloaking &amp; Doorway Pages</h4>
+                        <h4>Web Traffic Management</h4>
                      </a>
-                     <p>Social, SEO</p>
+                     <p>SEO, Marketing</p>
                   </div>
                   <!-- End case study content -->
                </div>
                <!-- End case study box -->
             </div>
             <!-- End Col -->
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+            <div class="col-md-4 text-center">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-3">
                      <img src="images/cases/case-study3.png" alt="" class="img-fluid">
                   </div>
                   <div class="casestudy-content">
                      <a href="#">
-                        <h4>Hosting company rank</h4>
+                        <h4>Web Traffic Management</h4>
                      </a>
-                     <p>Hosting, Marketing</p>
+                     <p>SEO, Marketing</p>
                   </div>
                   <!-- End case study content -->
                </div>
                <!-- End case study box -->
             </div>
             <!-- End col -->
-            <div class="col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s"><a href="#" class="btn btn-primary btn-lg tw-mt-80">view all</a></div>
+            <div class="col-md-12 text-center"><a href="#" class="btn btn-primary btn-lg tw-mt-80">view all</a></div>
          </div>
          <!-- End Row -->
       </div>
@@ -941,83 +767,6 @@
    </section>
    <!-- TW case end -->
 
-
-
-   <section id="work-process" class="work-process">
-      <div class="work-bg-pattern d-none d-lg-inline-block">
-         <img src="images/process/work_process.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
-      </div>
-      <!-- End Work BG Pattern -->
-      <div class="container">
-         <div class="row text-center">
-            <div class="col section-heading wow fadeInDown" data-wow-duration="1s">
-               <h2>
-                  <small>ease steps</small>Our Working <span>Process</span></h2>
-               <span class="animate-border ml-auto mr-auto tw-mt-20"></span>
-            </div>
-            <!-- End Col -->
-         </div>
-         <!-- End Row -->
-         <div class="row">
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process1.png" alt="" class="img-fluid">
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <p>01. Research Project</p>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper bg-orange d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process2.png" alt="" class="img-fluid">
-                     </div>
-                  </div>
-                  <!-- End Process Wrapper -->
-                  <p>02. Find Ideas</p>
-               </div>
-               <!-- End Word Process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper bg-blue d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process3.png" alt="" class="img-fluid">
-                     </div>
-                  </div>
-                  <!-- End Process Wrapper -->
-                  <p>03. Start Optimize</p>
-               </div>
-               <!-- End Work Process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-3">
-               <div class="tw-work-process">
-                  <div class="process-wrapper bg-yellow d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".8s">
-                     <div class="process-inner d-table-cell">
-                        <img src="images/icon/process4.png" alt="" class="img-fluid">
-                     </div>
-                  </div>
-                  <!-- End PRocess Wrapper -->
-                  <p>04. Reach Target</p>
-               </div>
-               <!-- End Work Process -->
-            </div>
-            <!-- End Col -->
-            <div class="col-md-12 text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="1.2s"><a href="#" class="btn btn-primary tw-mt-80">Get Started</a></div>
-         </div>
-         <!-- End Row -->
-      </div>
-      <!-- End Container -->
-   </section>
-   <!-- End Word Process -->
 
 
 
@@ -1107,10 +856,10 @@
    </section>
    <!-- End TW testimonial -->
 
-   <section id="tw-pricing" class="tw-pricing">
+   <section id="tw-pricing-one" class="tw-pricing">
       <div class="container">
          <div class="row text-center">
-            <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="col section-heading">
                <h2>
                   <small>Pricing Table</small>
                   Our <span>Pricing</span>
@@ -1124,27 +873,33 @@
             <div class="col-md-12">
                <div class="pricing-tab">
                   <ul class="nav">
-                     <li class="nav-item wow fadeInLeft" data-wow-duration="1s">
+                     <li class="nav-item">
                         <a data-toggle="tab" href="#monthly" class="active">Monthly</a>
                      </li>
-                     <li class="nav-item wow fadeInRight" data-wow-duration="1s">
+                     <li class="nav-item">
                         <a data-toggle="tab" href="#yearly">Yearly</a>
                      </li>
                   </ul>
                   <!-- Nav Tabs ends -->
                   <div class="tab-content tw-tab-content">
-                     <div class="tab-pane show active" id="monthly">
-                        <div class="row animated fadeIn">
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box border-left-radius">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon1.png" alt="" class="img-fluid">
+                     <div class="tab-pane fade show active" id="monthly">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-shrock">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon4.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Entrepreneur</h3>
+                                    <h3 class="text-white">Starter Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>49.99</strong>
+                                       <small>/mo</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
@@ -1153,59 +908,56 @@
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>9</strong>
-                                    <small>Month</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-shamrock">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
                            <!-- COl end -->
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box pricing-featured">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon2.png" alt="" class="img-fluid">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-orange">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon5.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Growing Business</h3>
+                                    <h3 class="text-white">Starter Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>69.99</strong>
+                                       <small>/mo</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
                                        <li>25 social media reviews</li>
                                        <li>1 Free Optimization</li>
-                                       <li>24/7 support</li>
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>29</strong>
-                                    <small>Month</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-orange">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
                            <!-- COl end -->
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box border-right-radius">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon3.png" alt="" class="img-fluid">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-yellow">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon6.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Pro Business</h3>
+                                    <h3 class="text-white">Advanced Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>99.99</strong>
+                                       <small>/mo</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
@@ -1214,14 +966,7 @@
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>49</strong>
-                                    <small>Month</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-yellow">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
@@ -1230,18 +975,24 @@
                         <!-- Tab pane end -->
                      </div>
                      <!-- Tab Content End -->
-                     <div class="tab-pane show fade" id="yearly">
+                     <div class="tab-pane fade show" id="yearly">
                         <div class="row">
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon1.png" alt="" class="img-fluid">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-shrock">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon4.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Entrepreneur</h3>
+                                    <h3>Starter Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>48.99</strong>
+                                       <small>/yr</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
@@ -1250,59 +1001,56 @@
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>7</strong>
-                                    <small>Yearly</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-shamrock">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
                            <!-- COl end -->
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box pricing-featured">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon2.png" alt="" class="img-fluid">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-orange">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon5.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Growing Business</h3>
+                                    <h3>Starter Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>68.99</strong>
+                                       <small>/yr</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
                                        <li>25 social media reviews</li>
                                        <li>1 Free Optimization</li>
-                                       <li>24/7 support</li>
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>28</strong>
-                                    <small>Yearly</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-orange">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
                            <!-- COl end -->
-                           <div class="col-md-4 animated fadeIn">
-                              <div class="tw-pricing-box">
-                                 <div class="price-icon-bg">
-                                    <div class="price-icon">
-                                       <img src="images/pricing/pricing_icon3.png" alt="" class="img-fluid">
+                           <div class="col-md-4">
+                              <div class="tw-price-box bg-yellow">
+                                 <div class="pricing-icon-wrapper d-table">
+                                    <div class="price-icon d-table-cell">
+                                       <img src="images/pricing/pricing_icon6.png" alt="" class="img-fluid">
                                     </div>
                                  </div>
-                                 <!-- End Pricing icon bg -->
+                                 <!-- End Icon Wrapper -->
                                  <div class="pricing-feaures">
-                                    <h3>Pro Business</h3>
+                                    <h3>Advanced Plan</h3>
+                                    <div class="pricing-price">
+                                       <sup>$</sup>
+                                       <strong>98.99</strong>
+                                       <small>/yr</small>
+                                    </div>
+                                    <!-- Pricing End -->
                                     <ul>
                                        <li>25 Analytics Compaign</li>
                                        <li>1,300 Keywords</li>
@@ -1311,14 +1059,7 @@
                                     </ul>
                                  </div>
                                  <!-- Pricing Features End -->
-                                 <div class="pricing-price">
-                                    <sup>$</sup>
-                                    <strong>47</strong>
-                                    <small>Yearly</small>
-                                 </div>
-                                 <!-- Pricing End -->
-                                 <a href="" class="btn btn-dark">buy now</a>
-
+                                 <a href="" class="btn btn-white tw-mt-30 text-yellow">buy now</a>
                               </div>
                               <!--  pricing box ends -->
                            </div>
@@ -1336,26 +1077,24 @@
          </div>
          <!-- Content Row End -->
       </div>
-      <!-- Container End -->
-
+      <!-- End Container -->
    </section>
-   <!-- End Pricing -->
 
 
    <section id="tw-blog" class="tw-blog">
       <div class="container">
          <div class="row text-center">
-            <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="col section-heading">
                <h2>
                   <small>our blog</small>
                   Latest <span>Blog</span>
                </h2>
-               <span class="animate-border border-offwhite ml-auto mr-auto tw-mt-20"></span>
+               <span class="animate-border ml-auto mr-auto tw-mt-20"></span>
             </div>
             <!-- Col end -->
          </div>
          <!-- Row End -->
-         <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+         <div class="row">
             <div class="col-lg-4 col-md-12">
                <div class="tw-latest-post">
                   <div class="latest-post-media text-center">
@@ -1464,7 +1203,7 @@
                <!-- End Tw Latest Post -->
             </div>
             <!-- End Col -->
-            <div class="col-md-12 text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"><a href="#" class="btn btn-primary btn-lg tw-mt-80">view all</a></div>
+            <div class="col-md-12 text-center"><a href="#" class="btn btn-primary btn-lg tw-mt-80">view all</a></div>
          </div>
          <!-- End Row -->
       </div>
@@ -1474,7 +1213,7 @@
 
    <section id="tw-client" class="tw-client">
       <div class="container">
-         <div class="row  wow fadeInUp">
+         <div class="row">
             <div class="col-md-12">
                <div class="clients-carousel owl-carousel">
                   <div class="client-logo-wrapper d-table">
@@ -1704,8 +1443,6 @@
    <!-- End Footer -->
 
 
-
-
    <!-- Javascripts File
       =============================================================================-->
 
@@ -1723,10 +1460,10 @@
    <script src="js/jquery.counterup.min.js"></script>
    <!-- Video Popup -->
    <script src="js/jquery.magnific.popup.js"></script>
-   <!-- Smooth scroll -->
-   <script src="js/smoothscroll.js"></script>
-   <!-- WoW js -->
+   <!-- WOW JS -->
    <script src="js/wow.min.js"></script>
+   <!-- SmoothScroll JS -->
+   <script src="js/smoothscroll.js"></script>
    <!-- Template Custom -->
    <script src="js/main.js"></script>
 </body>

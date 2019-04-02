@@ -87,7 +87,13 @@
     width: 80%;
   }
 }
-  
+    /*  
+  Template Name: SeoBin | SEO, Social Media and Marketing HTML Template
+  Author: Tripples
+  Author URI: https://themeforest.net/user/tripples
+  Description: SeoBin | SEO, Social Media and Marketing HTML Template
+  Version: 1.0
+*/
     /* Table of Content
 =================================================
 1. Typography
@@ -702,7 +708,13 @@ section {
 
 /* ************************* Header  ****************************/
 /*************************** Nav ********************************/
-
+.tw-header {
+  background: #fff;
+  -webkit-box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 2;
+}
 
 .tw-head {
   background: #fff;

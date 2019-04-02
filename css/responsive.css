@@ -137,11 +137,6 @@
 /* Small Devices, Tablets */
 
 @media (min-width: 768px) and (max-width: 991px) {
-   /*Nav fixed*/
-   .navbar-fixed{
-      position: relative;
-      animation:none;
-   }
    /* Top bar */
    .top-contact {
       margin-bottom: 30px;
@@ -511,12 +506,6 @@
 /* Small Devices Potrait */
 
 @media (max-width: 767px) {
-
-   /*Nav fixed*/
-   .navbar-fixed{
-      position: relative;
-      animation:none;
-   }
    /* Top bar */
    .top-menu ul li a {
       padding-right: 10px;

@@ -32,12 +32,34 @@
 $(function ($) {
    "use strict";
 
-   jQuery(".navbar-nav li a").on("click", function() { 
-      jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
-      jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+   $(window).on('load', function(){
+      checkScreenSize();
    });
 
+   /* Menu Active link*/
+   $('.nav-item ').on('click', function () {
+      $('.nav-item ').removeClass('active');
+      $(this).addClass('active');
+   });
 
+   /* DropDown Menu */
+   $(window).on("resize", function (e) {
+      checkScreenSize();
+   });
+
+   function checkScreenSize() {
+      var newWindowWidth = $(window).width();
+      if (newWindowWidth < 991) {
+         $("li.nav-item a").on("click", function () {
+            $(this).parent("li").find(".dropdown-menu").slideToggle();
+            $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+         });
+      } else {
+         $("li.nav-item a").on("click", function () {
+            console.log('do nothing');
+         });
+      }
+   }
 
    /*Main Slideshow*/
    $(".tw-hero-slider").owlCarousel({
